@@ -16,11 +16,11 @@
                   <div class="col-md-12 col-12">
                       <div class="card">
                           <div class="card-header">
-                              <h4 class="card-title">افزودن شهر</h4>
+                              <h4 class="card-title">افزودن استان</h4>
                           </div>
                           <div class="card-content">
                               <div class="card-body">
-                                  <form action="{{ route("admin.add_city_save") }}" method="post" class="form form-horizontal">
+                                  <form action="{{ route("admin.add_ostan_save") }}" method="post" class="form form-horizontal">
                                       <div class="form-body">
                                           <div class="row">
                                               <div class="col-md-1">
@@ -31,13 +31,6 @@
                                               </div>
                                               <div class="col-md-1">
                                                   <label>استان</label>
-                                              </div>
-                                              <div class="col-md-11 form-group">
-                                                  <select name="ostan_id"  class="form-control">
-                                                      @foreach($ostan as $row)
-                                                          <option value="{{ $row->id }}">{{ $row->title }}</option>
-                                                      @endforeach
-                                                  </select>
                                               </div>
                                               <div class="col-sm-12 d-flex justify-content-end">
                                                   <button type="submit" class="btn btn-primary mr-1 mb-1">ثبت</button>
